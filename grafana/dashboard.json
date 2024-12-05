@@ -1,0 +1,32 @@
+{
+  "dashboard": {
+    "id": null,
+    "title": "Application Monitoring",
+    "timezone": "browser",
+    "panels": [
+      {
+        "type": "graph",
+        "title": "Number of Accesses",
+        "targets": [
+          {
+            "expr": "http_requests_total",
+            "legendFormat": "Accesses",
+            "refId": "A"
+          }
+        ]
+      },
+      {
+        "type": "graph",
+        "title": "Database Queries",
+        "targets": [
+          {
+            "expr": "db_queries_total",
+            "legendFormat": "Queries",
+            "refId": "B"
+          }
+        ]
+      }
+    ]
+  },
+  "overwrite": true
+}
